@@ -8,16 +8,18 @@
 
 int main(void)
 {
-	char c;
+	int a;
 
-	c = 'a';
-
-	while (c <= 'z')
+	for (a = 0; a < 100; a++)
 	{
-		putchar(c);
-		c++;
+		putchar(a + '0');
+		if (a < 99)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-
 	putchar('\n');
+
 	return (0);
 }
