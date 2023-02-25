@@ -3,9 +3,9 @@
 
 /**
 
- * _isupper - uppercase letters
+ * _isdigit - check if numbers are 0 - 9
 
- * @c: char to check
+ * @c: char to be checked
 
  *
 
@@ -14,11 +14,11 @@
  */
 
 
-int _isupper(int c)
+int _isdigit(int c)
 
 {
 
-        if (c >= 'A' && c <= 'Z')
+        if (c >= '0' && c <= '9')
 
                 return (1);
 
